@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 class NavBar extends Component{
     constructor(){
@@ -7,14 +8,14 @@ class NavBar extends Component{
     render(){
         return(
             <div id="navbar">
-                <nav className="navbar navbar-fixed-top">
+                <nav className="navbar navbar-default navbar-fixed-top">
                     <div className="container-fluid navbar-white">
                         <div className="container">
                             <ul className="nav navbar-nav">
-                                <li>Home</li>
-                                <li>Shop</li>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/shop">Shop</Link></li>
+                                <li><Link to="/about">About Us</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -24,7 +25,7 @@ class NavBar extends Component{
                                 ClassicModels Logo
                             </div>
                             <div className="nav navbar-nav pull-right">
-                                <li>Sign in or Create Account</li>
+                                <li><Link to="/login">Sign</Link> in or <Link to="/register">Create Account</Link></li>
                                 <li>items in cart | (0.00)</li>
                             </div>
                         </div>
