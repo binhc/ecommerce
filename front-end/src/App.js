@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import SlickSlider from './components/SlickSlider';
 import Register from './containers/Register';
 import Home from './components/Home';
+import Login from './containers/Login'
 
 class App extends Component {
   render() {

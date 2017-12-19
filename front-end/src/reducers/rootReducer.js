@@ -12,7 +12,8 @@ import AuthReducer from './AuthReducer';
 // combineReducers takes an object as an arg 
 // that arg has key:value pair = stateName: reducerFunction
 const rootReducer = combineReducers({
-    auth: AuthReducer
+    auth: AuthReducer, 
+    pl: ProductLineReducer
 });
 
 export default rootReducer;
